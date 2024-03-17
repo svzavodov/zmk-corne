@@ -16,15 +16,15 @@
         compo_r_brkts {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
-            timeout-ms = <300>;
-            require-prior-idle-ms = <300>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         combo_L_brkts {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 17>;
-            timeout-ms = <300>;
-            require-prior-idle-ms = <300>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         combo_left_esc {
