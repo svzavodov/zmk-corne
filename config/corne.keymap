@@ -29,14 +29,14 @@
 
         combo_left_esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <13 14>;
             timeout-ms = <300>;
             require-prior-idle-ms = <100>;
         };
 
         combo_right_esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <9 10>;
+            key-positions = <21 22>;
             timeout-ms = <300>;
             require-prior-idle-ms = <100>;
         };
@@ -69,10 +69,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E           &kp R  &kp T        &kp Y    &kp U            &kp I      &kp O    &kp P      &kp ESC
-&kp LCTRL  &kp A  &kp S  &kp D           &kp F  &kp G        &kp H    &kp J            &kp K      &kp L    &kp COLON  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C           &kp V  &kp B        &kp N    &kp M            &kp COMMA  &kp DOT  &kp FSLH   &kt LSHFT
-                         &tap_dance_gui  &mo 1  &kp SPACE    &kp RET  &lt 2 BACKSPACE  &kp LALT
+&kp TAB    &kp Q  &kp W        &kp E           &kp R        &kp T               &kp Y         &kp U            &kp I       &kp O           &kp P      &kp ESC
+&kp LCTRL  &kp A  &mt LSHFT S  &mt LEFT_ALT D  &mt LCTRL F  &mt LEFT_SHIFT G    &mt LSHIFT H  &mt LCTRL J      &mt LALT K  &mt LEFT_WIN L  &kp COLON  &kp SQT
+&kp LSHFT  &kp Z  &kp X        &kp C           &kp V        &kp B               &kp N         &kp M            &kp COMMA   &kp DOT         &kp FSLH   &kp LSHFT
+                               &kp LEFT_WIN    &mo 1        &kp SPACE           &kp RET       &lt 2 BACKSPACE  &kp LALT
             >;
         };
 
