@@ -31,14 +31,14 @@
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
             timeout-ms = <300>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <400>;
         };
 
         combo_right_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <21 22>;
             timeout-ms = <300>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <400>;
         };
     };
 
