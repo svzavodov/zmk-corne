@@ -16,29 +16,29 @@
         compo_r_brkts {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 19>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <500>;
         };
 
         combo_L_brkts {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 17>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <500>;
         };
 
         combo_left_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <500>;
         };
 
         combo_right_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <21 22>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <500>;
+            require-prior-idle-ms = <500>;
         };
     };
 
@@ -55,6 +55,15 @@
             label = "TAP_DANCE_GUI";
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI>, <&tog 1>, <&kt LEFT_GUI>;
+        };
+
+        h_tap_modif: h_tap_modif {
+            compatible = "zmk,behavior-hold-tap";
+            label = "H_TAP_MODIF";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
         };
     };
 
