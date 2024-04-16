@@ -29,16 +29,30 @@
 
         combo_left_esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
+            key-positions = <15 16>;
             timeout-ms = <500>;
             require-prior-idle-ms = <500>;
         };
 
         combo_right_esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <21 22>;
+            key-positions = <19 20>;
             timeout-ms = <500>;
             require-prior-idle-ms = <500>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <4 5>;
+            timeout-ms = <230>;
+            require-prior-idle-ms = <230>;
+        };
+
+        right_breacket {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+            timeout-ms = <230>;
+            require-prior-idle-ms = <230>;
         };
     };
 
@@ -93,7 +107,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1        &kp N2  &kp N3        &kp N4  &kp N5       &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0         &kp ESC
+&kp N0     &kp N1        &kp N2  &kp N3        &kp N4  &kp N5       &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0         &kp ESC
 &trans     &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans       &kp LEFT      &kp DOWN  &kp UP        &kp RIGHT  &kp SEMICOLON  &kp LS(LALT)
 &kp LSHFT  &kp N7        &kp N8  &kp N9        &kp N0  &trans       &trans        &trans    &trans        &trans     &trans         &kp DEL
                                  &kp LGUI      &trans  &kp SPACE    &kp RET       &mo 3     &kp LEFT_GUI
